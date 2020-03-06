@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'SEGA LOGO FONT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SEGA LOGO FONT'), url('../components/SEGA.woff') format('woff');
+    }
+
+.container {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'SEGA LOGO FONT';
+    color: orangered;
+    font-weight: 300;
+}
+
+h2 {
+    color: orangered;
+}
+
+.search {
+    margin: 30px 0;
+}
+.search input {
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+}
+
+.article-list {
+    /* display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 2%; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+}
+
+.article-item {
+    padding: 20px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    box-shadow:  7px 7px 10px -5px #b8cad666, 
+                 -7px -7px 10px -5px #fff;
+    flex-grow: 1;
+    flex-basis: 30%;
+    min-height: 300px;
+    margin: 10px;
+}
+.article-item p {
+    max-block-size: 110px;
+    overflow: hidden;
+}
+
+.article-item img {
+    height: 200px;
+    width: auto;
+}
+
+.article-item .category, .article-item .link {
+    float: left;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.article-item .link {
+    float: right;
+    margin: 12px 0;
+}
+.article-item .link a {
+    color: orange;
+    text-decoration: none;
+}
+
+.article-item .link a:hover {color: #fff;}
+
+.loading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+@media(max-width:600px) {
+    .article-item {
+        flex-basis: 100%;
+        min-height: unset;
+    }
+}
