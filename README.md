@@ -1,4 +1,4 @@
-<h2>FB React project</h2>
+<h2>FB React front with Drupal back</h2>
 
 This project is example of combining Drupal back-end with React front-end.
 It fetches the Articles from ipropaganda.com.
